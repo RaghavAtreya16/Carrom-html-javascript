@@ -1,0 +1,83 @@
+# Carrom-html-javascript
+<!-- http://bucephalus.org/text/CanvasHandbook/CanvasHandbook.html -->
+<!DOCTYPE html>
+<html>
+<body>
+
+<canvas id="myCanvas" width="400" height="400" style="border:15px solid #d3d3d3;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+
+<script>
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+var midcir = c.getContext("2d");
+ctx.beginPath();
+ctx.lineWidth = 3;
+ctx.arc(20,20,10,0,2*Math.PI);
+ctx.stroke();
+
+ctx.beginPath();
+ctx.arc(20,380,10,0,2*Math.PI);
+ctx.stroke();
+
+ctx.beginPath();
+ctx.arc(380,20,10,0,2*Math.PI);
+ctx.stroke();
+
+ctx.beginPath();
+ctx.arc(380,380,10,0,2*Math.PI);
+ctx.stroke();
+
+
+midcir.beginPath();
+midcir.arc(200,200,50,0,2*Math.PI);
+midcir.stroke();
+
+midcir.beginPath();
+midcir.arc(200,200,45,0,2*Math.PI);
+midcir.stroke();
+
+midcir.beginPath();
+midcir.arc(200,200,10,0,2*Math.PI);
+midcir.stroke();
+
+      ctx.lineWidth = 1;
+      ctx.beginPath();
+      ctx.moveTo(45, 45);
+      ctx.lineTo(120, 120);
+      ctx.strokeStyle = 'blue';
+      ctx.stroke();
+      ctx.beginPath();
+      ctx.moveTo(45, 355);
+      ctx.lineTo(120, 280);
+      ctx.stroke();
+      ctx.beginPath();
+      ctx.moveTo(355, 355);
+      ctx.lineTo(280, 280);
+      ctx.stroke();
+      ctx.beginPath();
+      ctx.moveTo(355, 45);
+      ctx.lineTo(280, 120);
+      ctx.stroke();
+ 
+      ctx.beginPath();
+      ctx.moveTo(60, 70);
+      ctx.lineTo(60, 320);
+      ctx.stroke();
+      ctx.beginPath();
+      ctx.moveTo(70, 75);
+      ctx.lineTo(70, 320);
+      ctx.stroke();
+
+	  ctx.beginPath();
+	  ctx.arc(68,80,10,0,2*Math.PI);
+      ctx.stroke();
+      ctx.beginPath();
+ctx.arc(380,380,10,0,2*Math.PI);
+ctx.stroke();
+
+      
+</script> 
+
+</body>
+</html>
